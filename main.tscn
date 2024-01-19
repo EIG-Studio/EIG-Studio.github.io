@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://f4g3km4xwxp1"]
+
+[ext_resource type="Texture2D" uid="uid://b1d0jock3oj8a" path="res://assets/Sacabambaspis.png" id="1_yv0i2"]
+
+[sub_resource type="Gradient" id="Gradient_ap14y"]
+offsets = PackedFloat32Array(0, 0.201299, 0.512987, 0.818182, 1)
+colors = PackedColorArray(0.960784, 0, 0, 1, 0.534997, 0.317498, 0.586337, 1, 0.125429, 0.747171, 0.88074, 1, 0.947351, 0.660176, 0.868331, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_51u13"]
+gradient = SubResource("Gradient_ap14y")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(19, 323)
+scale = Vector2(4.5, 649.5)
+texture = SubResource("GradientTexture1D_51u13")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.5
+offset_top = -11.5
+offset_right = 43.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Welcome!"
+
+[node name="Sacabambaspis" type="Sprite2D" parent="."]
+position = Vector2(22, 331)
+texture = ExtResource("1_yv0i2")
